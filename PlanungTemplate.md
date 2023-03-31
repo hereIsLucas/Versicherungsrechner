@@ -37,7 +37,7 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 
 #### in Arbeit
-* [ ] <In the Index.html(main page) do the first design and formatting>
+
 
 #### erledigt
 
@@ -46,5 +46,4 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 ## Liste der zuvor abgeschlossenen Arbeiten
 
-* [ ] <Idee>
-* [ ] <Idee>
+* [x] <Work on my Git-Problem

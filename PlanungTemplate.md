@@ -37,7 +37,7 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 
 #### in Arbeit
-
+* [ ] <In the Index.html(main page) do the first design and formatting>
 
 #### erledigt
 

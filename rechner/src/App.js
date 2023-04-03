@@ -1,4 +1,5 @@
 import './App.css';
+import TabPages from "./components/TabPages";
 
 function App() {
   return (
@@ -6,7 +7,7 @@ function App() {
       <header className="App-header">
         
         
-        
+        <TabPages/>
       </header>
     </div>
   );

@@ -1,3 +1,6 @@
+import Navbar from "./components/Navbar"
+import AboutUs from "./pages/AboutUs"
+import { Route, Routes } from "react-router-dom"
 import './App.css';
 import { MultiFormsProgressBar } from "./components/MultiFormsProgressBar";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
@@ -11,21 +14,29 @@ function App() {
   const [pagesAnswers, setPagesAnswers] = useState({})
 
   const onPagesAnswersUpdate = (step, answerObj) => {
-    setPagesAnswers({...pagesAnswers, [step]: answerObj})
+    setPagesAnswers({ ...pagesAnswers, [step]: answerObj })
   }
 
-  const prevButton =  () => {
-    if (index > 1){
+  const prevButton = () => {
+    if (index > 1) {
       setIndex(prevIndex => prevIndex - 1);
     }
   }
-  const nextButton =  () => {
-    if (index < 3){
+  const nextButton = () => {
+    if (index < 3) {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
   return (
     <div className="App">
+          <Navbar />
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<home />} />
+              <Route path="/AboutUs" element={<AboutUs />} />
+            </Routes>
+          </div>
+
       <Container className="h-100">
         <Row className="m-5">
           <Col className="align-self-center">
@@ -35,11 +46,11 @@ function App() {
         <Row>
           <Card>
             <Card.Body>
-              <MultiForms step={index} list={questions} onPageUpdate={onPagesAnswersUpdate} pagesAnswers={pagesAnswers}/>
+              <MultiForms step={index} list={questions} onPageUpdate={onPagesAnswersUpdate} pagesAnswers={pagesAnswers} />
             </Card.Body>
             <Card.Footer className='d-flex justify-content-between'>
-              <Button onClick={prevButton} disabled ={index===1}>Previous</Button>
-              <Button onClick={nextButton}>{index === totalPagesCount? 'Submit' : 'Next'}</Button>              
+              <Button onClick={prevButton} disabled={index === 1}>Previous</Button>
+              <Button onClick={nextButton}>{index === totalPagesCount ? 'Submit' : 'Next'}</Button>
             </Card.Footer>
           </Card>
         </Row>

@@ -7,6 +7,8 @@ import { questions } from "./Questions";
 
 function App() {
   const [index, setIndex] = useState(2)
+  const totalPagesCount = questions.length;
+  const [pagesAnswers, setPagesAnswers] = useState({})
 
   const prevButton =  () => {
     if (index > 1){
@@ -29,11 +31,11 @@ function App() {
         <Row>
           <Card>
             <Card.Body>
-              <MultiForms list={questions} />
+              <MultiForms step={index} list={questions} />
             </Card.Body>
             <Card.Footer className='d-flex justify-content-between'>
-              <Button onClick={prevButton} disabled={index===1}>Previous</Button>
-              <Button onClick={nextButton} disabled={index===3}>Next</Button>
+              <Button onClick={prevButton} disabled ={index===1}>Previous</Button>
+              <Button onClick={nextButton}>{index === totalPagesCount? 'Submit' : 'Next'}</Button>              
             </Card.Footer>
           </Card>
         </Row>

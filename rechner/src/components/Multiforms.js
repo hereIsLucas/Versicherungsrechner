@@ -1,13 +1,19 @@
 import { Form } from "react-bootstrap";
-import { FormItems } from "./FormItems"
+import { FormItems } from "./FormItems";
+import { useState } from "react";
 
 export const MultiForms = (props) => { 
+    const [answers, setAnswers] =  useState ([]);
+
+    const updateAnswers = (value, category) => {
+        setAnswers({...answers, [category] : value})
+    }
     return (
     <div className="text-left">
       {
-        props.list[0].items?.map((item, index) => {
+        props.list[props.step - 1].items?.map((item, index) => {
           return (
-            <FormItems key={item.label} item={item}/>
+            <FormItems key={item.label} item={item} onChange={updateAnswers}/>
           )
         })
       }

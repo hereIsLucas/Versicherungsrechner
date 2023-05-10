@@ -1,8 +1,8 @@
 import { Form } from "react-bootstrap";
+import { useState } from "react";
 
-
-export const FormItems = ({ item, onChange }) => {
-
+export const FormItems = ({ item, onChange, answer }) => {
+    const [currentValue, setCurrentValue] = useState(answer || null)
     switch (item.type) {
         case 'text':
             return (
@@ -12,6 +12,7 @@ export const FormItems = ({ item, onChange }) => {
                         type="text"
                         id={item.label}
                         onChange={(e) => onChange(e.target.value, item.value)}
+                        value={currentValue}
                     />
                 </>
             )
@@ -23,6 +24,8 @@ export const FormItems = ({ item, onChange }) => {
                     <Form.Control
                         type="password"
                         id="inputPassword5"
+                        value={currentValue}
+
                     />
                 </>
             )
@@ -36,7 +39,7 @@ export const FormItems = ({ item, onChange }) => {
         case 'select':
             return (
                 <div className="mt-2">
-                    <Form.Select aria-label={item.label} onChange={(e) => onChange(e.target.value, item.value)}>
+                    <Form.Select aria-label={item.label} value={currentValue} onChange={(e) => onChange(e.target.value, item.value)}>
                         <option>{item.label}</option>
                         {
                             item.options.map((opt, index) => {

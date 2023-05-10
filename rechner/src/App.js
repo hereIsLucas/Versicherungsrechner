@@ -6,9 +6,13 @@ import { MultiForms } from "./components/Multiforms";
 import { questions } from "./Questions";
 
 function App() {
-  const [index, setIndex] = useState(2)
-  const totalPagesCount = questions.length;
+  const [index, setIndex] = useState(1)
+  const totalPagesCount = questions.length
   const [pagesAnswers, setPagesAnswers] = useState({})
+
+  const onPagesAnswersUpdate = (step, answerObj) => {
+    setPagesAnswers({...pagesAnswers, [step]: answerObj})
+  }
 
   const prevButton =  () => {
     if (index > 1){
@@ -31,7 +35,7 @@ function App() {
         <Row>
           <Card>
             <Card.Body>
-              <MultiForms step={index} list={questions} />
+              <MultiForms step={index} list={questions} onPagesUpdate={onPagesAnswersUpdate} pagesAnswers={pagesAnswers}/>
             </Card.Body>
             <Card.Footer className='d-flex justify-content-between'>
               <Button onClick={prevButton} disabled ={index===1}>Previous</Button>

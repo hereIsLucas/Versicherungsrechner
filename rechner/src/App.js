@@ -35,7 +35,7 @@ function App() {
         <Row>
           <Card>
             <Card.Body>
-              <MultiForms step={index} list={questions} onPagesUpdate={onPagesAnswersUpdate} pagesAnswers={pagesAnswers}/>
+              <MultiForms step={index} list={questions} onPageUpdate={onPagesAnswersUpdate} pagesAnswers={pagesAnswers}/>
             </Card.Body>
             <Card.Footer className='d-flex justify-content-between'>
               <Button onClick={prevButton} disabled ={index===1}>Previous</Button>

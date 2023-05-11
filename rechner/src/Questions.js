@@ -5,7 +5,7 @@ export const questions = [{
             {
                 label: 'name',
                 type: 'text',
-                value: 'surname'
+                value: 'name'
             }, {
                 label: 'surname',
                 type: 'text',

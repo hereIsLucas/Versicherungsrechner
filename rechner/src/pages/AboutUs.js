@@ -1,6 +1,7 @@
 import React from 'react';
+
 export default function AboutUs() {
-  const AboutUs = () => {
+ 
     return (
       <div className="about-us-container">
         <h1>About Our Company</h1>
@@ -14,6 +15,6 @@ export default function AboutUs() {
         <p>At our company, we are committed to providing the highest level of customer service and support. Our team of experienced insurance professionals is always available to answer questions and provide guidance, and we work tirelessly to make sure that our clients are satisfied with the coverage they have chosen.</p>
         <p>Thank you for considering our company for your car insurance needs. We look forward to serving you!</p>
       </div>
-    );
-  };
+    )
+  
 }

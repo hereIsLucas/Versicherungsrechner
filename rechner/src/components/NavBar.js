@@ -1,5 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import './Navbar.css';
+import './StylesNavbar.css';
 import v from '../images/letter-v.png';
 
 export default function Navbar() {

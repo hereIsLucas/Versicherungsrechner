@@ -5,7 +5,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useState } from "react";
 import { MultiForms } from "../components/Multiforms";
 import { questions } from "../Questions";
-import '../components/Navbar.css'
+
 
 
 export default function VRMainPage() {

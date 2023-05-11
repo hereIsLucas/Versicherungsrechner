@@ -14,7 +14,7 @@ export const MultiFormsProgressBar = (props) => {
             <div
               className={`step ${accomplished ? "completed" : null}`}
             >
-              1
+              I
             </div>
           )}
         </Step>
@@ -23,7 +23,7 @@ export const MultiFormsProgressBar = (props) => {
             <div
               className={`step ${accomplished ? "completed" : null}`}
             >
-              2
+              II
             </div>
           )}
         </Step>
@@ -32,7 +32,7 @@ export const MultiFormsProgressBar = (props) => {
             <div
               className={`step ${accomplished ? "completed" : null}`}
             >
-              3
+              III
             </div>
           )}
         </Step>

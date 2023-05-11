@@ -1,0 +1,9 @@
+#outerBody {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    padding-top: 6rem;
+  }
+  #aboutUsDiv {
+    padding-top: 6rem;
+  }

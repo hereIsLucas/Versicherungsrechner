@@ -1,5 +1,5 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
-import './Navbar.css'
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import './Navbar.css';
 import v from '../images/letter-v.png';
 
 export default function Navbar() {
@@ -12,7 +12,10 @@ export default function Navbar() {
       </Link>  
       </ul> 
       <ul>
-        <CustomLink to="../AboutUs">Contact Us</CustomLink>
+        <CustomLink to="../VrMainPage">Calculator</CustomLink>
+      </ul>
+      <ul>
+        <CustomLink to="../ContactUs">Contact Us</CustomLink>
       </ul>
       <ul>
         <CustomLink to="../AboutUs">About Us</CustomLink>

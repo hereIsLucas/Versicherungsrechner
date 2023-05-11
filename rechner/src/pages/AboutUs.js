@@ -1,9 +1,11 @@
 import React from 'react';
+import './ContactUs.css';
+
 
 export default function AboutUs() {
  
     return (
-      <div className="about-us-container">
+      <div className="about-us-container" id="aboutUsDiv">
         <h1>About Our Company</h1>
         <p>We are a leading car insurance company, dedicated to providing affordable and reliable coverage to drivers of all types of vehicles. Our mission is to make sure that our clients are protected on the road, and that they feel confident in the insurance they have chosen.</p>
         <h2>Our History</h2>

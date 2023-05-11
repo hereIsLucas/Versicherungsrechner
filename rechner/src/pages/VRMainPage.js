@@ -28,6 +28,7 @@ export default function VRMainPage() {
     }
   }
     return (
+      <div id="padding">
 <Container className="h-100">
         <Row className="m-5">
           <Col className="align-self-center">
@@ -46,5 +47,6 @@ export default function VRMainPage() {
           </Card>
         </Row>
       </Container>
+      </div>
     )
   }

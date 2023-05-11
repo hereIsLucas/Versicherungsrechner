@@ -32,7 +32,7 @@ function App() {
           <Navbar />
           <div className="container">
             <Routes>
-              <Route path="/" element={<home />} />
+              <Route path="/" element={< />} />
               <Route path="/AboutUs" element={<AboutUs />} />
             </Routes>
           </div>

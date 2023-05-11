@@ -41,7 +41,7 @@ export const questions = [{
     section: 3,
     items: [
         {
-            label: 'If you are ready to submit please press `Submit`',
+            label: 'Annual or Monthly',
             type: 'information'
         }
     ]

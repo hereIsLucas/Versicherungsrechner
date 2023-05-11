@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import CarSlides from "./pages/CarSlides"
 import AboutUs from "./pages/AboutUs"
 import ContactUs from "./pages/ContactUs.js"
 import VRMainPage from "./pages/VRMainPage"
@@ -12,6 +13,8 @@ function App() {
           <div className="container">
             <Routes>
               <Route path="/" element={< VRMainPage/>} />
+              <Route path="/CarSlides" element={< CarSlides/>} />
+              <Route path="/VRMainPage" element={< VRMainPage/>} />
               <Route path="/AboutUs" element={< AboutUs/>} />
               <Route path="/ContactUs" element={< ContactUs/>} />
             </Routes>

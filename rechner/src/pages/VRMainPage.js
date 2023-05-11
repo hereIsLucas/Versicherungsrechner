@@ -27,9 +27,10 @@ export default function VRMainPage() {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
-    return (
-      <div id="padding">
-<Container className="h-100">
+  return (
+    <div id="padding">
+      <h2>Please give all the necessary infos for your approximate billing</h2>
+      <Container className="h-100">
         <Row className="m-5">
           <Col className="align-self-center">
             <MultiFormsProgressBar step={index} />
@@ -47,6 +48,6 @@ export default function VRMainPage() {
           </Card>
         </Row>
       </Container>
-      </div>
-    )
-  }
+    </div>
+  )
+}

@@ -12,6 +12,9 @@ export default function Navbar() {
       </Link>  
       </ul> 
       <ul>
+        <CustomLink to="../CarSlides">Car Slides</CustomLink>
+      </ul>
+      <ul>
         <CustomLink to="../VrMainPage">Calculator</CustomLink>
       </ul>
       <ul>

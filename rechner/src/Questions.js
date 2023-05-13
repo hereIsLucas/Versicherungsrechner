@@ -10,7 +10,7 @@ export const questions = [{
                 label: 'surname',
                 type: 'text',
                 value: 'surname'
-            },{
+            }, {
                 label: 'Street address',
                 type: 'text',
                 value: 'street'
@@ -37,12 +37,13 @@ export const questions = [{
         }
 
     ]
-},{
+}, {
     section: 3,
+    title: "Billing Options",
     items: [
         {
-            label: 'Annual or Monthly',
-            type: 'information'
+            label: "Choose your billing option",
+            type: "billingOption",
         }
     ]
 }]

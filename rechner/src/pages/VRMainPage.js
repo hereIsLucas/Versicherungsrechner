@@ -106,12 +106,17 @@ export default function VRMainPage() {
         <Row>
           <Card>
             <Card.Body>
-              <MultiForms step={index} list={questions} onAnswerUpdate={onPagesAnswersUpdate} pagesAnswers={pagesAnswers} />
+              <MultiForms 
+              step={index} 
+              list={questions} 
+              onAnswerUpdate={onPagesAnswersUpdate}
+              onPageUpdate={onPageUpdate} 
+              pagesAnswers={pagesAnswers} />
             </Card.Body>
             <Card.Footer className='d-flex justify-content-between'>
               <Button onClick={prevButton} disabled={index === 1}>Previous</Button>
               <Button onClick={handleNextButton}>{index === totalPagesCount ? 'Submit' : 'Next'}</Button>
-              </Card.Footer>
+            </Card.Footer>
           </Card>
         </Row>
       </Container>

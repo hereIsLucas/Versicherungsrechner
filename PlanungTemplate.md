@@ -26,6 +26,15 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 * [ ] <Start a react application for the Versicherungsrechner [npx create-react-app versicherungsrechner]>
 * [ ] <In the Index.html(main page) do the first design and formatting>
+* [ ] <Mini-Website in the website>
+* [ ] <Header>
+    * [ ] <Home-page redirection>
+* [ ] <Footer>
+    * [ ] <Datasafety-page redirection>
+    * [ ] <Kontak-page redirection>
+    * [ ] <Impressum-page redirection>
+* [ ] <>
+
 
 ---
 
@@ -46,5 +55,4 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 ## Liste der zuvor abgeschlossenen Arbeiten
 
-* [ ] <Idee>
-* [ ] <Idee>
+* [x] <Work on my Git-Problem

@@ -1,0 +1,18 @@
+
+FROM node:14-alpine
+WORKDIR /app
+RUN apk update && apk add git
+COPY package*.json ./
+
+RUN npm install 
+RUN npm install react-tabs
+RUN npm install web-vitals
+RUN npm install react-step-progress-bar
+RUN npm install react-dom
+RUN npm install react-bootstrap
+RUN npm install react-router-dom
+
+RUN git clone --single-branch --branch dev https://github.com/hereIsLucas/Versicherungsrechner.git
+
+EXPOSE 3000
+CMD ["npm", "start"]
